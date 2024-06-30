@@ -1,0 +1,152 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+body {
+  background: linear-gradient(135deg, #75baff 0%, #57abff 100%);
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 70px;
+  box-sizing: border-box;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5em;
+  margin: 0 0 20px 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} 
+
+
+.white-container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 150px;
+  margin-top: 70px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.white-container::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 3px dotted #edf2f7;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+/* Additional text styles */
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* Add this to your existing App.css */
+
+/* Add this to your existing App.css */
+
+.upload-section {
+  margin-top: -100px; /* Adjust this value as needed */
+}
+
+.upload {
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000; /* A nice blue color */
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-shadow: none; /* This explicitly removes any text shadow */
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.styled-button {
+  background-color: #57abff; /* Blue background color */
+  color: white; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: #75baff; /* Darker shade of blue on hover */
+}
+
+.button input[type='file'] {
+  display: none;
+}
+
+/* Additional margin for copy button */
+.copy-icon {
+  color: #57abff; /* Match the button's background color */
+  font-size: 24px; /* Adjust the icon size as needed */
+  transition: color 0.3s ease;
+}
+
+.copy-icon:hover {
+  color: #75baff; /* Darker shade of blue on hover */
+}
+
+.link-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  word-break: break-all;
+}
+
+.link-box a {
+  color: #57abff;
+  text-decoration: none;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.link-box .copy-icon {
+  flex-shrink: 0;
+}
